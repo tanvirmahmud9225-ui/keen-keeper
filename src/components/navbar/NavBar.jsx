@@ -1,12 +1,15 @@
 import React from 'react';
+import { GoHome } from 'react-icons/go';
+import { ImStatsDots } from 'react-icons/im';
+import { RiTimeLine } from 'react-icons/ri';
 import { Link, NavLink } from 'react-router';
 
 const NavBar = () => {
 
     const links = <>
-        <li><NavLink to={"/"} className={({ isActive }) => `font-semibold mr-5 ${isActive && `text-white bg-[#244D3F]`}`}>Home</NavLink></li>
-        <li><NavLink to={"/timeline"} className={({ isActive }) => `font-semibold mr-5 ${isActive && `text-white bg-[#244D3F]`}`}>Timeline</NavLink></li>
-        <li><NavLink to={"/stats"} className={({ isActive }) => `font-semibold ${isActive && `text-white bg-[#244D3F]`}`}>Stats</NavLink></li>
+        <li><NavLink to={"/"} className={({ isActive }) => `font-semibold text-lg mr-5 ${isActive && `text-white bg-[#244D3F]`}`}><GoHome /> Home</NavLink></li>
+        <li><NavLink to={"/timeline"} className={({ isActive }) => `font-semibold text-lg mr-5 ${isActive && `text-white bg-[#244D3F]`}`}><RiTimeLine /> Timeline</NavLink></li>
+        <li><NavLink to={"/stats"} className={({ isActive }) => `font-semibold text-lg ${isActive && `text-white bg-[#244D3F]`}`}><ImStatsDots /> Stats</NavLink></li>
     </>
 
 
