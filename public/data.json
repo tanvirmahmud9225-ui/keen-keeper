@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "name": "Alex Chen",
+        "picture": "https://i.ibb.co/cSYZHNqH/34da8269c3a6db7dbf48da3b58e12c8e-cfaec522.jpg",
+        "email": "alex.chen@example.com",
+        "days_since_contact": 18,
+        "status": "overdue",
+        "tags": [
+            "college",
+            "close friend"
+        ],
+        "bio": "Met in computer science class. We play basketball every week.",
+        "goal": 14,
+        "next_due_date": "2025-04-09"
+    },
+    {
+        "id": 2,
+        "name": "Jamie Rodriguez",
+        "picture": "https://i.ibb.co/YFtWNL0z/Retratos-barcelona-actor-headshots-Irene-Alguilar.jpg",
+        "email": "jamie.r@example.com",
+        "days_since_contact": 12,
+        "status": "almost due",
+        "tags": [
+            "work",
+            "mentor"
+        ],
+        "bio": "Former colleague who helped me get my first job. Now grab coffee monthly.",
+        "goal": 14,
+        "next_due_date": "2025-04-15"
+    },
+    {
+        "id": 3,
+        "name": "Taylor Smith",
+        "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+        "email": "taylor.smith@example.com",
+        "days_since_contact": 5,
+        "status": "on-track",
+        "tags": [
+            "soccer",
+            "close friend"
+        ],
+        "bio": "Teammate from recreational league. Known for post-game BBQs.",
+        "goal": 21,
+        "next_due_date": "2025-04-29"
+    },
+    {
+        "id": 4,
+        "name": "Jordan Lee",
+        "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+        "email": "jordan.lee@example.com",
+        "days_since_contact": 28,
+        "status": "almost due",
+        "tags": [
+            "family",
+            "cousin"
+        ],
+        "bio": "Cousin who lives across town. We share love for hiking and board games.",
+        "goal": 30,
+        "next_due_date": "2025-04-15"
+    },
+    {
+        "id": 5,
+        "name": "Casey Williams",
+        "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+        "email": "casey.w@example.com",
+        "days_since_contact": 7,
+        "status": "almost due",
+        "tags": [
+            "neighbor",
+            "dog park"
+        ],
+        "bio": "Lives two doors down. Our dogs are best friends.",
+        "goal": 7,
+        "next_due_date": "2025-04-13"
+    },
+    {
+        "id": 6,
+        "name": "Riley Johnson",
+        "picture": "https://randomuser.me/api/portraits/women/6.jpg",
+        "email": "riley.j@example.com",
+        "days_since_contact": 42,
+        "status": "overdue",
+        "tags": [
+            "book club",
+            "close friend"
+        ],
+        "bio": "Met at library. We discuss thrillers every month.",
+        "goal": 30,
+        "next_due_date": "2025-04-01"
+    },
+    {
+        "id": 7,
+        "name": "Morgan Freeman",
+        "picture": "https://randomuser.me/api/portraits/men/7.jpg",
+        "email": "morgan.f@example.com",
+        "days_since_contact": 3,
+        "status": "on-track",
+        "tags": [
+            "gym",
+            "spotter"
+        ],
+        "bio": "Workout partner. Keeps me accountable for early morning sessions.",
+        "goal": 14,
+        "next_due_date": "2025-04-24"
+    },
+    {
+        "id": 8,
+        "name": "Sasha Kim",
+        "picture": "https://randomuser.me/api/portraits/women/8.jpg",
+        "email": "sasha.kim@example.com",
+        "days_since_contact": 25,
+        "status": "overdue",
+        "tags": [
+            "art",
+            "college"
+        ],
+        "bio": "Studied graphic design together. Still critique each other's work.",
+        "goal": 21,
+        "next_due_date": "2025-04-09"
+    },
+    {
+        "id": 9,
+        "name": "Dakota Brown",
+        "picture": "https://randomuser.me/api/portraits/men/9.jpg",
+        "email": "dakota.b@example.com",
+        "days_since_contact": 2,
+        "status": "on-track",
+        "tags": [
+            "music",
+            "bandmate"
+        ],
+        "bio": "Drummer in my indie band. We practice every Tuesday.",
+        "goal": 10,
+        "next_due_date": "2025-04-21"
+    },
+    {
+        "id": 10,
+        "name": "Quinn Taylor",
+        "picture": "https://randomuser.me/api/portraits/women/10.jpg",
+        "email": "quinn.t@example.com",
+        "days_since_contact": 33,
+        "status": "overdue",
+        "tags": [
+            "travel",
+            "close friend"
+        ],
+        "bio": "Backpacked through Europe together. Still plan annual trips.",
+        "goal": 30,
+        "next_due_date": "2025-03-27"
+    },
+    {
+        "id": 11,
+        "name": "Parker Davis",
+        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "email": "parker.d@example.com",
+        "days_since_contact": 9,
+        "status": "almost due",
+        "tags": [
+            "college",
+            "roommate"
+        ],
+        "bio": "Lived together sophomore year. Still text about old memories.",
+        "goal": 10,
+        "next_due_date": "2025-04-11"
+    },
+    {
+        "id": 12,
+        "name": "Avery Wilson",
+        "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+        "email": "avery.w@example.com",
+        "days_since_contact": 1,
+        "status": "on-track",
+        "tags": [
+            "sibling",
+            "family"
+        ],
+        "bio": "My younger sister. We share Netflix account and watch together online.",
+        "goal": 7,
+        "next_due_date": "2025-04-19"
+    },
+    {
+        "id": 13,
+        "name": "Blake Martinez",
+        "picture": "https://randomuser.me/api/portraits/men/13.jpg",
+        "email": "blake.m@example.com",
+        "days_since_contact": 19,
+        "status": "overdue",
+        "tags": [
+            "hiking",
+            "close friend"
+        ],
+        "bio": "We climbed Mt. Rainier together. Planning next summit.",
+        "goal": 14,
+        "next_due_date": "2025-04-08"
+    },
+    {
+        "id": 14,
+        "name": "Casey Thompson",
+        "picture": "https://randomuser.me/api/portraits/women/14.jpg",
+        "email": "casey.t@example.com",
+        "days_since_contact": 14,
+        "status": "almost due",
+        "tags": [
+            "volunteer",
+            "shelter"
+        ],
+        "bio": "Met at animal shelter. We foster kittens together.",
+        "goal": 14,
+        "next_due_date": "2025-04-13"
+    },
+    {
+        "id": 15,
+        "name": "Jordan Patel",
+        "picture": "https://randomuser.me/api/portraits/men/15.jpg",
+        "email": "jordan.p@example.com",
+        "days_since_contact": 6,
+        "status": "on-track",
+        "tags": [
+            "cooking",
+            "neighbor"
+        ],
+        "bio": "Shares leftover meals. We have a friendly chili competition.",
+        "goal": 14,
+        "next_due_date": "2025-04-21"
+    },
+    {
+        "id": 16,
+        "name": "Riley Cooper",
+        "picture": "https://randomuser.me/api/portraits/women/16.jpg",
+        "email": "riley.c@example.com",
+        "days_since_contact": 31,
+        "status": "overdue",
+        "tags": [
+            "college",
+            "best friend"
+        ],
+        "bio": "Known since kindergarten. She's my emergency contact.",
+        "goal": 21,
+        "next_due_date": "2025-03-30"
+    },
+    {
+        "id": 17,
+        "name": "Sawyer Brooks",
+        "picture": "https://randomuser.me/api/portraits/men/17.jpg",
+        "email": "sawyer.b@example.com",
+        "days_since_contact": 8,
+        "status": "almost due",
+        "tags": [
+            "photography",
+            "club"
+        ],
+        "bio": "We do weekend photo walks around the city.",
+        "goal": 14,
+        "next_due_date": "2025-04-12"
+    },
+    {
+        "id": 18,
+        "name": "Emery Foster",
+        "picture": "https://randomuser.me/api/portraits/women/18.jpg",
+        "email": "emery.f@example.com",
+        "days_since_contact": 4,
+        "status": "on-track",
+        "tags": [
+            "parent",
+            "family"
+        ],
+        "bio": "My mom. We talk every Sunday without fail.",
+        "goal": 7,
+        "next_due_date": "2025-04-20"
+    },
+    {
+        "id": 19,
+        "name": "Drew Mitchell",
+        "picture": "https://randomuser.me/api/portraits/men/19.jpg",
+        "email": "drew.m@example.com",
+        "days_since_contact": 22,
+        "status": "overdue",
+        "tags": [
+            "gaming",
+            "online"
+        ],
+        "bio": "Met in an MMORPG. We raid together twice a month.",
+        "goal": 14,
+        "next_due_date": "2025-04-05"
+    },
+    {
+        "id": 20,
+        "name": "Sydney Parker",
+        "picture": "https://randomuser.me/api/portraits/women/20.jpg",
+        "email": "sydney.p@example.com",
+        "days_since_contact": 11,
+        "status": "almost due",
+        "tags": [
+            "yoga",
+            "studio"
+        ],
+        "bio": "We co-teach Sunday morning yoga. Also grab smoothies after.",
+        "goal": 14,
+        "next_due_date": "2025-04-16"
+    }
+]

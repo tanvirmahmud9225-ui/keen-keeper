@@ -1,0 +1,56 @@
+import React, { useContext } from 'react';
+import { DataContext } from '../../components/dataContext/DataContext';
+import callImg from "../../assets/call.png"
+import textImg from '../../assets/text.png'
+import videoImg from '../../assets/video.png'
+
+
+const TimeLine = () => {
+
+    const { calls, texts, videos } = useContext(DataContext)
+
+
+
+
+    return (
+        <div className='mt-20 w-9/12 mx-auto mb-900'>
+            <div className='space-y-4'>
+                {
+                    calls.map((call, index) => <div key={index} className='flex items-center gap-4 border border-gray-200 rounded-xl shadow-lg p-5 '>
+                        <div>
+                            <img src={callImg} alt="" />
+                        </div>
+                        <div>
+                            <h1><span className='text-xl'>Call</span> <span className='text-gray-400 ml-2 font-semibold'>with {call.name}</span></h1>
+                            <p className='text-gray-400 font-medium'>March, 19, 2026</p>
+                        </div>
+                    </div>)
+                }
+                {
+                    texts.map((text, index) => <div key={index} className='flex items-center gap-4 border border-gray-200 rounded-xl shadow-lg p-5 '>
+                        <div>
+                            <img src={textImg} alt="" />
+                        </div>
+                        <div>
+                            <h1><span className='text-xl'>Text</span> <span className='text-gray-400 ml-2 font-semibold'>with {text.name}</span></h1>
+                            <p className='text-gray-400 font-medium'>March, 19, 2026</p>
+                        </div>
+                    </div>)
+                }
+                {
+                    videos.map((video, index) => <div key={index} className='flex items-center gap-4 border border-gray-200 rounded-xl shadow-lg p-5 '>
+                        <div>
+                            <img src={videoImg} alt="" />
+                        </div>
+                        <div>
+                            <h1><span className='text-xl'>Text</span> <span className='text-gray-400 ml-2 font-semibold'>with {video.name}</span></h1>
+                            <p className='text-gray-400 font-medium'>March, 19, 2026</p>
+                        </div>
+                    </div>)
+                }
+            </div>
+        </div>
+    );
+};
+
+export default TimeLine;
