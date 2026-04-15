@@ -9,8 +9,8 @@ import { FadeLoader } from 'react-spinners';
 
 const TimeLine = () => {
     const { loading } = useFriends()
-    const { calls, texts, videos } = useContext(DataContext)
-    const timeline = [...calls, ...texts, ...videos]
+    const { calls, texts, videos,timeline } = useContext(DataContext)
+    
 
 
 
@@ -18,7 +18,7 @@ const TimeLine = () => {
 
 
     return (
-        <div className='mt-20 w-9/12 mx-auto mb-900'>
+        <div className='mt-20 w-9/12 mx-auto mb-40'>
             <h1 className='text-5xl font-bold mb-5'>Timeline</h1>
             {
 

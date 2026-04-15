@@ -9,6 +9,7 @@ const DataContextProvider = ({ children }) => {
     const [videos, setVideos] = useState([])
     const [texts, setTexts] = useState([])
     const [calls, setCalls] = useState([])
+    const timeline = [...calls, ...texts, ...videos]
 
 
 
@@ -88,7 +89,8 @@ const DataContextProvider = ({ children }) => {
         texts,
         handleText,
         videos,
-        handleVideos
+        handleVideos,
+        timeline
     }
 
     return (

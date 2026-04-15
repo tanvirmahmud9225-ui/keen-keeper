@@ -91,19 +91,19 @@ const FriendDetail = ({ params }) => {
                             <div className='flex gap-5'>
                                 <div
                                     onClick={() => handleCalls(expectFriends)}
-                                    className='w-70 flex justify-center items-center flex-col gap-3 py-4 rounded-xl border border-gray-300 cursor-pointer'>
+                                    className='flex-1 flex justify-center items-center flex-col gap-3 py-4 rounded-xl border border-gray-300 cursor-pointer btn h-full'>
                                     <LuPhoneCall className='text-3xl' />
                                     <h1 className='text-3xl font-bold'>Call</h1>
                                 </div>
                                 <div
                                     onClick={() => handleText(expectFriends)}
-                                    className='w-70 flex justify-center items-center flex-col gap-3 py-4 rounded-xl border border-gray-300 cursor-pointer'>
+                                    className='flex-1 flex justify-center items-center flex-col gap-3 py-4 rounded-xl border border-gray-300 cursor-pointer btn h-full'>
                                     <MdMessage className='text-3xl' />
                                     <h1 className='text-3xl font-bold'>Text</h1>
                                 </div>
                                 <div
                                     onClick={() => handleVideos(expectFriends)}
-                                    className='w-70 flex justify-center items-center flex-col gap-3 py-4 rounded-xl border border-gray-300 cursor-pointer'>
+                                    className='flex-1 flex justify-center items-center flex-col gap-3 py-4 rounded-xl border border-gray-300 cursor-pointer btn h-full'>
                                     <LuVideo className='text-3xl' />
                                     <h1 className='text-3xl font-bold'>Video</h1>
                                 </div>

@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import useFriends from '../useFriends/useFriends';
+import { DataContext } from '../dataContext/DataContext';
 
 const Banner = () => {
+
+    const { friends } = useFriends();
+    const { timeline } = useContext(DataContext)
+
+
+
     return (
         <div className='w-9/12 mx-auto'>
             <div className='my-20 text-center space-y-6'>
@@ -11,7 +19,7 @@ const Banner = () => {
             </div>
             <div className='my-20 grid grid-cols-4 gap-8'>
                 <div className='text-center py-8  border border-gray-200 shadow-lg rounded-xl space-y-3 cursor-pointer hover:scale-105 ease-linear duration-120'>
-                    <h1 className='text-4xl font-bold'>10</h1>
+                    <h1 className='text-4xl font-bold'>{friends.length}</h1>
                     <p className='text-xl text-gray-500 '>Total Friends</p>
                 </div>
                 <div className='text-center py-8  border border-gray-200 shadow-lg rounded-xl space-y-3 cursor-pointer hover:scale-105 ease-linear duration-120'>
@@ -23,7 +31,7 @@ const Banner = () => {
                     <p className='text-xl text-gray-500 '>Need Attention</p>
                 </div>
                 <div className='text-center py-8  border border-gray-200 shadow-lg rounded-xl space-y-3 cursor-pointer hover:scale-105 ease-linear duration-120'>
-                    <h1 className='text-4xl font-bold'>12</h1>
+                    <h1 className='text-4xl font-bold'>{timeline.length}</h1>
                     <p className='text-xl text-gray-500 '>Interactions This Month</p>
                 </div>
             </div>

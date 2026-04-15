@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const FriendCard = ({ friend }) => {
 
-    const { id, name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date } = friend;
+    const { id, name, picture, days_since_contact, status, tags } = friend;
 
 
     return (

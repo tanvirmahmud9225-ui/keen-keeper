@@ -6,8 +6,8 @@ import { HashLoader } from 'react-spinners';
 
 const Stats = () => {
     const { loading } = useFriends()
-    const { calls, texts, videos } = useContext(DataContext)
-    const timeline = [...calls, ...texts, ...videos]
+    const { calls, texts, videos, timeline } = useContext(DataContext)
+
     // #region Sample data
     const data = [
         { name: 'Call', value: calls.length, fill: '#0088FE' },
@@ -18,7 +18,7 @@ const Stats = () => {
     // #endregion
 
     return (
-        <div className='w-9/12 mx-auto pt-20 mb-200'>
+        <div className='w-9/12 mx-auto pt-20 mb-20'>
             {
                 loading ? <HashLoader size={80} color='#5b77d4' className='mx-auto mt-10' /> : <div>
                     <h1 className='text-6xl font-bold mb-10'>Friendship Analytics</h1>
