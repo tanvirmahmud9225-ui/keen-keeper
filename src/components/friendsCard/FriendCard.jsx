@@ -7,7 +7,7 @@ const FriendCard = ({ friend }) => {
 
 
     return (
-        <Link to={`/${id}`} className='border border-gray-300 p-5 shadow-lg rounded-3xl'>
+        <Link to={`/${id}`} className='border border-gray-300 p-5 shadow-lg rounded-3xl hover:scale-105 ease-linear duration-120'>
             <div className='flex justify-center items-center'>
                 <img src={picture} alt="" className='w-30 h-30 rounded-full ' />
             </div>
