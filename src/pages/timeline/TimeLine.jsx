@@ -4,7 +4,7 @@ import callImg from "../../assets/call.png"
 import textImg from '../../assets/text.png'
 import videoImg from '../../assets/video.png'
 import useFriends from '../../components/useFriends/useFriends';
-import { FadeLoader} from 'react-spinners';
+import { FadeLoader } from 'react-spinners';
 
 
 const TimeLine = () => {
@@ -18,7 +18,7 @@ const TimeLine = () => {
         <div className='mt-20 w-9/12 mx-auto mb-900'>
             <h1 className='text-5xl font-bold mb-5'>Timeline</h1>
             {
-                loading ? <div className='mt-10 flex justify-center items-center'><FadeLoader size={30} color='#5b77d4' className='mx-auto' /></div> : <div className='space-y-4'>
+                loading ? <div className='mt-10 flex justify-center items-center'><FadeLoader height={40} margin={20} radius={10} width={10} color='#5b77d4' className='mx-auto' /></div> : <div className='space-y-4'>
                     {
                         calls.map((call, index) => <div key={index} className='flex items-center gap-4 border border-gray-200 rounded-xl shadow-lg p-5 '>
                             <div>
@@ -47,7 +47,7 @@ const TimeLine = () => {
                                 <img src={videoImg} alt="" />
                             </div>
                             <div>
-                                <h1><span className='text-xl'>Text</span> <span className='text-gray-400 ml-2 font-semibold'>with {video.name}</span></h1>
+                                <h1><span className='text-xl'>Video</span> <span className='text-gray-400 ml-2 font-semibold'>with {video.name}</span></h1>
                                 <p className='text-gray-400 font-medium'>March, 19, 2026</p>
                             </div>
                         </div>)

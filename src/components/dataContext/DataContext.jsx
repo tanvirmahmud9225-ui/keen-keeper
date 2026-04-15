@@ -30,7 +30,7 @@ const DataContextProvider = ({ children }) => {
         }
         else {
             setCalls([...calls, currentCall])
-            toast.success(`${currentCall.name} is added timeline`)
+            toast.success(`Call With ${currentCall.name}`)
         }
     }
 
@@ -52,7 +52,7 @@ const DataContextProvider = ({ children }) => {
         }
         else {
             setTexts([...texts, currentText])
-            toast.success(`${currentText.name} is added in timeline`)
+            toast.success(`Text With ${currentText.name}`)
         }
     }
 
@@ -76,7 +76,7 @@ const DataContextProvider = ({ children }) => {
         }
         else {
             setVideos([...videos, currentVideo])
-            toast.success(`${currentVideo.name} is added in timeline`)
+            toast.success(`Video With ${currentVideo.name}`)
         }
     }
 

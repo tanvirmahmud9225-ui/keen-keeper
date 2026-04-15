@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router';
 import useFriends from '../useFriends/useFriends';
-import { GridLoader, HashLoader } from 'react-spinners';
+import { GridLoader} from 'react-spinners';
 import { RiDeleteBinFill } from 'react-icons/ri';
 import { FaArchive } from 'react-icons/fa';
 import { PiBellSimpleZBold } from 'react-icons/pi';
@@ -26,7 +26,7 @@ const FriendDetail = ({ params }) => {
 
 
     return (
-        <div className='mb-900'>
+        <div className='mb-10'>
             {
                 loading ? <div className='mt-10 flex justify-center items-center'><GridLoader size={30} color='#5b77d4' className='mx-auto' /></div> :
                     <div className='w-9/12 mx-auto  mt-10 grid grid-cols-6 grid-rows-2 justify-between gap-5'>
