@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router';
 import useFriends from '../useFriends/useFriends';
-import { GridLoader} from 'react-spinners';
+import { GridLoader } from 'react-spinners';
 import { RiDeleteBinFill } from 'react-icons/ri';
 import { FaArchive } from 'react-icons/fa';
 import { PiBellSimpleZBold } from 'react-icons/pi';
@@ -51,11 +51,11 @@ const FriendDetail = ({ params }) => {
 
                         <div className='col-span-4 grid grid-cols-3 gap-5 '>
                             <div className=' flex justify-center items-center flex-col gap-3 py-3 rounded-xl shadow-lg border border-gray-300'>
-                                <h1 className='text-4xl font-bold'>62</h1>
+                                <h1 className='text-4xl font-bold'>{expectFriends.days_since_contact}</h1>
                                 <p className='text-gray-400 text-xl'>Days Since Contact</p>
                             </div>
                             <div className=' flex justify-center items-center flex-col gap-3 py-3 rounded-xl shadow-lg border border-gray-300'>
-                                <h1 className='text-4xl font-bold'>30</h1>
+                                <h1 className='text-4xl font-bold'>{expectFriends.goal}</h1>
                                 <p className='text-gray-500 text-xl'>Goal (Days)</p>
                             </div>
                             <div className=' flex justify-center items-center flex-col gap-3 py-3 rounded-xl shadow-lg border border-gray-300'>
