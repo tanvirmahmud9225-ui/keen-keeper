@@ -1,16 +1,29 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### C1. 📊 Friendship Analytics Page (Stats Page)
 
-Currently, two official plugins are available:
+- The page must have a **"Friendship Analytics"** heading at the top
+- Add a **Pie Chart** (using Recharts) showing the count of **Call / Text / Video** interactions — match the Figma layout
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+### C2. 🔍 Timeline Filter
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add **filter options** on the Timeline page so users can filter entries by: **Call**, **Text**, or **Video**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### C3. 📄 GitHub README
+
+Add a well-designed `README.md` to your GitHub repository that includes:
+- Name of your project
+- A short description
+- Technologies you used
+- 3 key features of your project
+
+
+- **Sort** timeline entries by date (newest / oldest)
+- **Search** timeline entries by friend name or interaction type
+
+---
+
+

@@ -13,7 +13,7 @@ const FriendDetail = ({ params }) => {
 
     const { id } = useParams()
     const { friends, loading } = useFriends()
-    const { handleCalls, handleText, handleVideos } = useContext(DataContext)
+    const { handleCalls, handleText, handleVideos, formateDate } = useContext(DataContext)
 
     const expectFriends = friends.find(friend => friend.id === parseInt(id));
 
@@ -29,9 +29,9 @@ const FriendDetail = ({ params }) => {
         <div className='mb-10'>
             {
                 loading ? <div className='mt-10 flex justify-center items-center'><GridLoader size={30} color='#5b77d4' className='mx-auto' /></div> :
-                    <div className='w-9/12 mx-auto  mt-10 grid grid-cols-6 grid-rows-2 justify-between gap-5'>
+                    <div className='w-9/12 mx-auto  mt-10 grid grid-cols-1 lg:grid-cols-6 grid-rows-2 justify-between gap-5'>
 
-                        <div className='border border-gray-300 p-5 shadow-lg rounded-xl col-span-2 row-span-2 flex flex-col justify-center'>
+                        <div className='border border-gray-300 p-5 shadow-lg rounded-xl lg:col-span-2 lg:row-span-2 flex flex-col justify-center'>
                             <div className='flex justify-center items-center mb-2'>
                                 <img src={expectFriends.picture} alt="" className='w-30 h-30 rounded-full ' />
                             </div>
@@ -49,7 +49,7 @@ const FriendDetail = ({ params }) => {
                         </div>
 
 
-                        <div className='col-span-4 grid grid-cols-3 gap-5 '>
+                        <div className='lg:col-span-4 grid lg:grid-cols-3 gap-5 '>
                             <div className=' flex justify-center items-center flex-col gap-3 py-3 rounded-xl shadow-lg border border-gray-300'>
                                 <h1 className='text-4xl font-bold'>{expectFriends.days_since_contact}</h1>
                                 <p className='text-gray-400 text-xl'>Days Since Contact</p>
@@ -59,11 +59,11 @@ const FriendDetail = ({ params }) => {
                                 <p className='text-gray-500 text-xl'>Goal (Days)</p>
                             </div>
                             <div className=' flex justify-center items-center flex-col gap-3 py-3 rounded-xl shadow-lg border border-gray-300'>
-                                <h1 className='text-4xl font-bold'>Feb 27, 2026</h1>
+                                <h1 className='text-4xl font-bold'>{formateDate}</h1>
                                 <p className='text-gray-500 text-xl'>Next Due</p>
                             </div>
                         </div>
-                        <div className='shadow-lg border border-gray-200 rounded-xl col-span-4 flex justify-between items-center p-5'>
+                        <div className='shadow-lg border border-gray-200 rounded-xl lg:col-span-4 flex justify-between items-center p-5'>
                             <div className='space-y-3'>
                                 <h1 className='text-3xl font-bold'>Relationship Goal</h1>
                                 <p className='text-2xl'><span className='text-gray-500'>Connect every</span> <span className='font-bold'>30 days</span></p>
@@ -75,7 +75,7 @@ const FriendDetail = ({ params }) => {
 
 
 
-                        <div className=' space-y-3 col-span-2 row-span-3'>
+                        <div className=' space-y-3 lg:col-span-2 row-span-3'>
                             <div className='border border-gray-300  py-3 shadow-lg rounded-xl flex justify-center'>
                                 <p className='flex items-center gap-2 font-bold text-lg'><PiBellSimpleZBold /> <span>Snooze 2 Weeks</span> </p>
                             </div>
@@ -86,9 +86,9 @@ const FriendDetail = ({ params }) => {
                                 <p className='flex items-center gap-2 font-bold text-lg'><RiDeleteBinFill /> <span>Delete</span></p>
                             </div>
                         </div>
-                        <div className=' bg-base-200 rounded-xl col-span-4  shadow-lg p-5'>
+                        <div className=' bg-base-200 rounded-xl lg:col-span-4  shadow-lg p-5'>
                             <h1 className='text-2xl font-bold mb-4 text-gray-400'>Quick Check-In</h1>
-                            <div className='flex gap-5'>
+                            <div className='flex flex-wrap gap-5'>
                                 <div
                                     onClick={() => handleCalls(expectFriends)}
                                     className='flex-1 flex justify-center items-center flex-col gap-3 py-4 rounded-xl border border-gray-300 cursor-pointer btn h-full'>

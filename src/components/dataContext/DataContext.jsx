@@ -15,18 +15,8 @@ const DataContextProvider = ({ children }) => {
 
     const handleCalls = (currentCall) => {
         const isExitCall = calls.find(call => call.id === currentCall.id)
-        const isExitText = texts.find(text => text.id === currentCall.id)
-        const isExitVideo = videos.find(video => video.id === currentCall.id)
         if (isExitCall) {
-            toast.error('already in timline')
-            return;
-        }
-        else if (isExitText) {
-            toast.error('already in timline')
-            return;
-        }
-        else if (isExitVideo) {
-            toast.error('already in timline')
+            toast.error('already in timeline')
             return;
         }
         else {
@@ -36,20 +26,10 @@ const DataContextProvider = ({ children }) => {
     }
 
     const handleText = (currentText) => {
-        const isExitCall = calls.find(call => call.id === currentText.id)
         const isExitText = texts.find(text => text.id === currentText.id)
-        const isExitVideo = videos.find(video => video.id === currentText.id)
         if (isExitText) {
             toast.error('already in timeline')
             return
-        }
-        else if (isExitCall) {
-            toast.error('already in timline')
-            return;
-        }
-        else if (isExitVideo) {
-            toast.error('already in timline')
-            return;
         }
         else {
             setTexts([...texts, currentText])
@@ -60,20 +40,10 @@ const DataContextProvider = ({ children }) => {
 
 
     const handleVideos = (currentVideo) => {
-        const isExitCall = calls.find(call => call.id === currentVideo.id)
-        const isExitText = texts.find(text => text.id === currentVideo.id)
         const isExitVideo = videos.find(video => video.id === currentVideo.id)
         if (isExitVideo) {
             toast.error('already in timeline')
             return
-        }
-        else if (isExitCall) {
-            toast.error('already in timline')
-            return;
-        }
-        else if (isExitText) {
-            toast.error('already in timline')
-            return;
         }
         else {
             setVideos([...videos, currentVideo])
@@ -81,7 +51,12 @@ const DataContextProvider = ({ children }) => {
         }
     }
 
-
+    const date = new Date();
+    const formateDate = date.toLocaleDateString("en-US", {
+        month: "long",
+        day: 'numeric',
+        year: 'numeric'
+    })
 
     const data = {
         calls,
@@ -90,7 +65,8 @@ const DataContextProvider = ({ children }) => {
         handleText,
         videos,
         handleVideos,
-        timeline
+        timeline,
+        formateDate
     }
 
     return (

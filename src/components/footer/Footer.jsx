@@ -24,11 +24,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='border-t border-gray-600 flex justify-between items-center text-gray-400 py-4'>
+                <div className='border-t border-gray-600 flex flex-wrap justify-center lg:justify-between items-center text-gray-400 gap-1 py-2 lg:py-4'>
                     <div>
                         <p>© 2026 KeenKeeper. All rights reserved.</p>
                     </div>
-                    <div className='flex gap-10'>
+                    <div className='flex text-sm lg:text-[15px] gap-3 lg:gap-10'>
                         <p>Privacy Policy</p>
                         <p>Terms of Service</p>
                         <p>Cookies</p>
