@@ -1,29 +1,17 @@
-
-### C1. 📊 Friendship Analytics Page (Stats Page)
-
-- The page must have a **"Friendship Analytics"** heading at the top
-- Add a **Pie Chart** (using Recharts) showing the count of **Call / Text / Video** interactions — match the Figma layout
-
----
-
-### C2. 🔍 Timeline Filter
-
-- Add **filter options** on the Timeline page so users can filter entries by: **Call**, **Text**, or **Video**
-
----
-
-### C3. 📄 GitHub README
-
-Add a well-designed `README.md` to your GitHub repository that includes:
-- Name of your project
-- A short description
-- Technologies you used
-- 3 key features of your project
+1.  Name of my project
+     Ans: keen-keeper
+2.  A short description
+     Ans: এটি একটি ডেভেলপার ওয়ার্কস্পেস, যেখানে প্রজেক্ট ম্যানেজমেন্ট, টাস্ক ট্রাকিং, টিম কোলাবোরেশন একসাথে করা যায়। এটি ডেভলপারদের কাজ সহজ করে এবং টিমের প্রডাক্টিভিটি বাড়াতে সাহায্য করে। 
 
 
-- **Sort** timeline entries by date (newest / oldest)
-- **Search** timeline entries by friend name or interaction type
+3.  Technologies you used
+     i.   Frontend: React.js
+     ii.  Style: Tailwind CSS
+     iii. Deployment: vercel
 
----
 
+3.  3 key features of your project
+     i.   ইন্টারেক্টিভ UI ডিজাইন: ইউজার-ফ্রেন্ডলি ইন্টারফেস যেখানে প্রজেক্ট ও টাস্ক ভিজ্যুয়ালি ম্যানেজ করা যায়।
+     ii.  ক্লায়েন্ট-সাইড ডাটা হ্যান্ডলিং: লোকাল স্টেট ব্যবহার করে ডাটা ম্যানেজ করা হয় (যেমন: task add/remove)।
+     iii. রেসপনসিভ ডিজাইন: মোবাইল, ট্যাব ও ডেস্কটপ—সব ডিভাইসে ভালোভাবে কাজ করে।
 

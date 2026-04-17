@@ -12,10 +12,8 @@ const useFriends = () => {
             const res = await fetch('/data.json')
             const data = await res.json();
 
-            setTimeout(() => {
-                setFriends(data)
-                setLoading(false)
-            }, 200);
+            setFriends(data)
+            setLoading(false)
         }
 
         fetchData()

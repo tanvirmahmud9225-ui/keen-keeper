@@ -13,7 +13,7 @@ const Banner = () => {
         <div className='w-9/12 mx-auto'>
             <div className='my-20 text-center space-y-6'>
                 <h1 className='lg:text-6xl text-3xl font-bold'>Friends to keep close in your life</h1>
-                <p className='text-gray-500'>Your personal shelf of meaningful connections. Browse, tend, and nurture the <br />
+                <p className='text-gray-500'>Your personal shelf of meaningful connections. Browse, tend, and nurture the <br className='hidden lg:flex' />
                     relationships that matter most.</p>
                 <button className='btn bg-green-900 text-white font-semibold'><span className='text-lg'>+</span> <span className='ml-2'>Add a Friend</span></button>
             </div>

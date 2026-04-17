@@ -15,9 +15,10 @@ const DataContextProvider = ({ children }) => {
 
     const handleCalls = (currentCall) => {
         const isExitCall = calls.find(call => call.id === currentCall.id)
+
         if (isExitCall) {
-            toast.error('already in timeline')
-            return;
+            setCalls([...calls, currentCall])
+            toast.success(`Call With ${currentCall.name}`)
         }
         else {
             setCalls([...calls, currentCall])
@@ -28,8 +29,8 @@ const DataContextProvider = ({ children }) => {
     const handleText = (currentText) => {
         const isExitText = texts.find(text => text.id === currentText.id)
         if (isExitText) {
-            toast.error('already in timeline')
-            return
+            setTexts([...texts, currentText])
+            toast.success(`Text With ${currentText.name}`)
         }
         else {
             setTexts([...texts, currentText])
@@ -42,8 +43,8 @@ const DataContextProvider = ({ children }) => {
     const handleVideos = (currentVideo) => {
         const isExitVideo = videos.find(video => video.id === currentVideo.id)
         if (isExitVideo) {
-            toast.error('already in timeline')
-            return
+            setVideos([...videos, currentVideo])
+            toast.success(`Video With ${currentVideo.name}`)
         }
         else {
             setVideos([...videos, currentVideo])
